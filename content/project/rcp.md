@@ -23,8 +23,4 @@ The book meta data needs to be persistently stored by the RCP.
 ### Data requests
 Clients must be able to query the book inventory over the RCP. In the first RCP version the client needs to be able to query a book by author and book title over network. 
 
-# Preparation
-
-1) Install the version control system git and create a new repository
-
-Create an empty project in one of the following programming languages: Java, Python or C++. 
+[Back (Preparation)](./preparation.md)|[Next (Implementation I)](./impl_1.md)

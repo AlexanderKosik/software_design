@@ -18,7 +18,7 @@ Before we dive into the project we must fulfill some requirements.
 
 7) Commit your empty project structure as a first commit and push it to github. 
 
-If you don't know how to do this, checkout [this](https://www.freecodecamp.org/news/what-is-git-and-how-to-use-it-c341b049ae61/) introduction. 
+If you don't know how to do this, checkout [this](https://www.freecodecamp.org/news/what-is-git-and-how-to-use-it-c341b049ae61/) or [this](https://git-scm.com/docs/gittutorial) tutorial. 
 
 If you need more ressources on git, have a look at this [free git book](https://git-scm.com/book/en/v2)
 

@@ -1,3 +1,5 @@
+[Back (Preparation)](./preparation.md) | [Next (Implementation I)](./impl_1.md)
+
 # Project RCP: Recommerce Platform
 
 In this project we create a recommerce platform. A recommerce platform is a software platform that manages used media items such as books.
@@ -23,4 +25,4 @@ The book meta data needs to be persistently stored by the RCP.
 ### Data requests
 Clients must be able to query the book inventory over the RCP. In the first RCP version the client needs to be able to query a book by author and book title over network. 
 
-[Back (Preparation)](./preparation.md)|[Next (Implementation I)](./impl_1.md)
+[Back (Preparation)](./preparation.md) | [Next (Implementation I)](./impl_1.md)

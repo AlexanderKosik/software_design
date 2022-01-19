@@ -28,8 +28,36 @@ The script transfers json files from the folder `json`. You can browse the folde
 
 The script can be used as followed:
 
+```bash
+$ python3 ./rcp_send.py 
+--- Select file for transmission | Ctrl+C to terminate ---
+[0]: book_4.json
+[1]: book_2.json
+[2]: book_1.json
+[3]: book_3.json
+File number: 
 ```
-$ ./rcp_send.py
+
+Select the file number for the file to be transmitted. 
+
+```bash
+...
+[3]: book_3.json
+File number: 1
+[TRY]	Transmitting file book_2.json
+[TRY]	Connecting to 127.0.0.1:20001 .....
+[OK]	Connection established
+[OK]	Transmission done (290 bytes transmitted)
+[OK]	Closing connection
+--- Select file for transmission | Ctrl+C to terminate ---
+```
+
+You can test your network settings and file transmission on your local machine by using `rcp_print_server.py`.
+
+```bash
+$ python3 ./rcp_print_server.py
+Got connection from ('127.0.0.1', 57196)
+b'{\n   "title": "Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones",\n   "author": "James Clear",\n   "isbn-10": "0735211299",\n   "quality": "very good",\n   "language": "english",\n   "publication_date": "2018/010/16",\n   "type": "hardcover",\n   "purchase_price": 2.90\n}\n'
 ```
 
 ## Internal representation of json files

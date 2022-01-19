@@ -1,1 +1,10 @@
-book 1 content
+{
+   "title": "The 7 Habits of Highly Effective People. 30th Anniversary Edition",
+   "author": "Stephen R. Covey",
+   "isbn-10": "1982137274",
+   "quality": "good",
+   "language": "english",
+   "publication_date": "2020/05/19",
+   "type": "paperback",
+   "purchase_price": 4.90
+}

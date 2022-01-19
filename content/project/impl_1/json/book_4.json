@@ -1,1 +1,10 @@
-book 4 content
+{
+   "title": "The Pragmatic Programmer: Your Journey To Mastery, 20th Anniversary Edition",
+   "author": "David Thomas; Andrew Hunt",
+   "isbn-10": "0135957052",
+   "quality": "very good",
+   "language": "english",
+   "publication_date": "2019/09/13",
+   "type": "hardcover",
+   "purchase_price": 14.50
+}

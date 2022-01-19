@@ -1,1 +1,10 @@
-book 2 content
+{
+   "title": "Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones",
+   "author": "James Clear",
+   "isbn-10": "0735211299",
+   "quality": "very good",
+   "language": "english",
+   "publication_date": "2018/010/16",
+   "type": "hardcover"
+   "purchase_price": 2.90
+}

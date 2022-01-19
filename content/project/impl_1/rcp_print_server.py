@@ -9,7 +9,7 @@ class EchoHandler(BaseRequestHandler):
             if msg:
                 print(msg)
             else:
-                time.sleep(0.1)
+                break
 
 if __name__ == '__main__':
     serv = TCPServer(('', 20_001), EchoHandler)

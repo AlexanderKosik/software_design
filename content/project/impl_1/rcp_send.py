@@ -47,20 +47,26 @@ def print_menu():
     for file_no, (file, path) in enumerate(files):
         print(f"[{file_no}]: {file}")
 
-sock = connect()
 
 while True:
     print_menu()
-    selection = int(input("File number: "))
-    files = read_json_files()
-    if  0 <= selection < len(files):
-        fn, fqfn = files[selection]
-        print(f"[TRY]\tTransmitting file {fn}")
-        with open(fqfn, 'rb') as f:
-            transmitted = 0
-            while content := f.read(BLOCK_SIZE):
-                sock.send(content)
-                transmitted += len(content)
-            print(f"[OK]\tTransmission done ({transmitted} bytes transmitted)")
-    else:
-        print("Invalid file selection")
+    try:
+        selection = int(input("File number: "))
+        files = read_json_files()
+        if  0 <= selection < len(files):
+            fn, fqfn = files[selection]
+            print(f"[TRY]\tTransmitting file {fn}")
+            with open(fqfn, 'rb') as f:
+                sock = connect()
+                transmitted = 0
+                while content := f.read(BLOCK_SIZE):
+                    sock.send(content)
+                    transmitted += len(content)
+                print(f"[OK]\tTransmission done ({transmitted} bytes transmitted)")
+                sock.close()
+                print(f"[OK]\tClosing connection")
+        else:
+            print("Invalid file selection")
+    except ValueError:
+        print("Invalid input")
+

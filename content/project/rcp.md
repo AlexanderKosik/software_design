@@ -16,9 +16,18 @@ Our system must accept meta data about books. This meta data will be transmitted
 The `json` format looks as followed:
 
 ```json
+{
+   "title": "Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones",
+   "author": "James Clear",
+   "isbn-10": "0735211299",
+   "quality": "very good",
+   "language": "english",
+   "publication_date": "2018/010/16",
+   "type": "hardcover",
+   "purchase_price": 2.90
+}
 ```
-
-This json book meta data can be validated in the RCP using a json schema file.
+You will find further json example files in the directory `./impl_1/json`.
 
 ## 2) Data storage
 The book meta data needs to be persistently stored by the RCP.
@@ -27,6 +36,8 @@ The book meta data needs to be persistently stored by the RCP.
 Clients must be able to query the book inventory over the RCP. In the first RCP version the client needs to be able to query a book by author and book title over network. 
 
 # Further readings
+
+If you need more information about json, feel free to have a look at these descriptions:
 
 - [Introduction to JSON](https://javaee.github.io/tutorial/jsonp001.html)
 - [Libraries to parse JSON](https://www.json.org/json-en.html)

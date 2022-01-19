@@ -15,16 +15,16 @@ The RCP systems needs to process `json` files over network. For that you need th
 - Listen on a fixed port for new connetions
 - A client will establish a new connection for every file that needs to be transmitted 
 
-The connection will be closed by the client if the file is transmitted completely.
+The connection will be closed by the client if the file is transmitted completely. By closing the connection on client side you will know, when the transfer is completed.
 
-Once the file is transmitted, convert the raw byte content to a `json-object`. That object can be validated with the provided schema file `json_file.schema`.  
+Once the file is transmitted, convert the raw byte content to a `json-object`. That object can be validated with the provided schema file `./json_file.schema`.  
 
 ## Simulating a client
 To simulate a client you can use the program `rcp_send.py` in the directory `content/project/impl_1`. With this application you can send json files to your RCP.
 
 To run the application you need a python installation. If you have no python interpreter installed, you can download an interpreter [here (python.org)](www.python.org).
 
-The script transfers json files from the folder `json`. You can browse the folder and inspect the json files manually and also save new json files to that folder to transmitt them over network. For that make sure, that the file ending is ´.json` (other file endings are filtered by the application). 
+The script transfers json files from the folder `json`. You can browse the folder and inspect the json files manually and also save new json files to that folder to transmit them over network. For that make sure, that the file ending is `.json` (other file endings are filtered by the application). 
 
 The script can be used as followed:
 

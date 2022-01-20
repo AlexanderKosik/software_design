@@ -73,6 +73,6 @@ b'{\n   "title": "Atomic Habits: An Easy & Proven Way to Build Good Habits & Bre
 
 - [Testing your system](../../material/testing.md)
 - [Encapsulation](../../material/encapsulation.md)
-- [Why is a VCS important](../../material/vcs.md)
+- [Why a VCS is important](../../material/vcs.md)
 
 [Back (preparation)](./preparation.md) | [Next (Implementation II)](../impl_2/impl_2.md)

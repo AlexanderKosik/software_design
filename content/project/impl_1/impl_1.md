@@ -17,7 +17,7 @@ The RCP systems needs to process `json` files over network. For that you need th
 
 The connection will be closed by the client if the file is transmitted completely. By closing the connection on client side you will know, when the transfer is completed.
 
-Once the file is transmitted, convert the raw byte content to a `json-object`. That object can be validated with the provided schema file `./json_file.schema`.  
+Once the file is transmitted, convert the raw byte content to a `json-object`. That object can be validated with the provided schema file `./json/json_file.schema`.  
 
 ## Simulating a client
 To simulate a client you can use the program `rcp_send.py` in the directory `content/project/impl_1`. With this application you can send json files to your RCP.
@@ -73,5 +73,6 @@ b'{\n   "title": "Atomic Habits: An Easy & Proven Way to Build Good Habits & Bre
 
 - [Testing your system](../../material/testing.md)
 - [Encapsulation](../../material/encapsulation.md)
+- [Why is a VCS important](../../material/vcs.md)
 
 [Back (preparation)](./preparation.md) | [Next (Implementation II)](../impl_2/impl_2.md)

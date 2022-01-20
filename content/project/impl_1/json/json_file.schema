@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "author": {
+      "type": "string"
+    },
+    "isbn-10": {
+      "type": "string"
+    },
+    "quality": {
+      "type": "string"
+    },
+    "language": {
+      "type": "string"
+    },
+    "publication_date": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "purchase_price": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "title",
+    "author",
+    "isbn-10",
+    "quality",
+    "language",
+    "publication_date",
+    "type",
+    "purchase_price"
+  ]
+}

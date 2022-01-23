@@ -1,6 +1,12 @@
 # What is good design?
 
-A good design is easy to understand. 
+## A good design is simple
+A good design is simple and easy to understand. If you have the same functionality in system, but one system is way simpler, the simpler system is a better system.
+
+There is this tale about a country paying thousands of dollers to a company which should delevope a ball pen that can write in space without gravity. Another country just uses a lead pencil in space. I don't know if this story is true, but it gets the point very well. You have more or less the same functionality, but one is way simpler.  
+
+## Readability
+ Source code is written once and maybe changed one time on a later point while refactoring. But it is read way more often. That's why simplicity and readibility is a crucial factor regarding a good design.
 
 That is very important. But even more import is, that a good design is easy to change
 

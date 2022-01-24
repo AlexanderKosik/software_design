@@ -8,3 +8,5 @@ In addition to that, course attendees show their current state of implementation
 
 Let's get started [here](./content/project/preparation.md)
 
+Link to the [glossary](./content/material/glossary.md)
+

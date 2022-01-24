@@ -72,7 +72,7 @@ b'{\n   "title": "Atomic Habits: An Easy & Proven Way to Build Good Habits & Bre
 # Further readings
 
 - [Testing your system](../../material/testing.md)
-- [Encapsulation](../../material/encapsulation.md)
+- [Abstraction](../../material/abstraction.md)
 - [Why a VCS is important](../../material/vcs.md)
 
 [Back (preparation)](./preparation.md) | [Next (Implementation II)](../impl_2/impl_2.md)

@@ -1,3 +1,8 @@
+# Logging of the application
+
+# Deployment of the application
+
+
 # Support of a new input data type, e.g. xml
 
 # Support of a different database

@@ -9,9 +9,9 @@ At this point the RCP should be able to receive json files over network and have
 ## Storing to a database
 The received json files must now be stored to a database. 
 
-1) Start by searching for a simple file-based database for your programming language. An example would be `sqlite`. 
+1) Start searching for a file-based database for your programming language. Check what the requirements are to use the database. An example for a commonly used file based database is `sqlite`.
 
-2) If you are using a relation database, create a draft for the database schema without coding.
+2) If you are using a relational database, create a draft for the database schema without coding.
    You need to consider:
 
     - The tables you need and the relations between the tables
@@ -20,13 +20,28 @@ The received json files must now be stored to a database.
 
 3) Implement the database connection and storage of json files to the database.
 
+# Multiple ways of database implementation
+
+There are multiple ways of implementing the database connection in your project. 
+
+### The manual way
+
+TBD
+
+### Object Relational Mapping (ORM)
+Object Relational Mapping presents a method of associating classes with database tables. Database tables are implicitly described by the objects that need to be stored. Every row in a table is associated to an object, where as every attribute of the object is a column in the table. 
+
+ORM simplifies object oriented programming with a database in the background. Common frameworks are `hibernate` for `java` and `SQLAlchemy` for `python`. 
+
 
 # Questions for reflection
 1) What are the right abstractions to use? Consider the ETC principle. Can you swap out the database implementation easily?
 
-2) Where are your connection properties stored? Are they hard coded?
+2) Where did the creation of the database occure? In source code, by script, manually, ...?
 
-3) Can you test your implementation effortless? 
+3) Where are your connection properties stored? Are they hard coded?
+
+4) How can you test your implementation? 
 
 # Further readings
 

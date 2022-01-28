@@ -73,6 +73,7 @@ b'{\n   "title": "Atomic Habits: An Easy & Proven Way to Build Good Habits & Bre
 
 - [Testing your system](../../material/testing.md)
 - [Abstraction](../../material/abstraction.md)
-- [Why a VCS is important](../../material/vcs.md)
+- [Why a Version Control System is important](../../material/vcs.md)
+- [What is JSON?](../../material/json.md)
 
 [Back (preparation)](./preparation.md) | [Next (Implementation II)](../impl_2/impl_2.md)

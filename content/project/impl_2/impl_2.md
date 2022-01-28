@@ -24,15 +24,20 @@ The received json files must now be stored to a database.
 
 There are multiple ways of implementing the database connection in your project. 
 
-### The manual way
+## The manual way
 
 TBD
 
-### Object Relational Mapping (ORM)
+## Object Relational Mapping (ORM)
 Object Relational Mapping presents a method of associating classes with database tables. Database tables are implicitly described by the objects that need to be stored. Every row in a table is associated to an object, where as every attribute of the object is a column in the table. 
 
-ORM simplifies object oriented programming with a database in the background. Common frameworks are `hibernate` for `java` and `SQLAlchemy` for `python`. 
+ORM simplifies object oriented programming with a database in the background. Common frameworks are `Hibernate` for `Java` and `SQLAlchemy` for `python`. 
 
+## NoSQL
+
+Another approach is to implement the requirements with a `NoSQL database`. A commonly used NoSQL database is `MongoDB`. NoSQL databases are predestined to work with data like JSON files. 
+
+If you have never heared about NoSQL databases, have a look at this description of advantages of NoSQL databases like MongoDB: [link (mongodb.com)](https://www.mongodb.com/advantages-of-mongodb)
 
 # Questions for reflection
 1) What are the right abstractions to use? Consider the ETC principle. Can you swap out the database implementation easily?

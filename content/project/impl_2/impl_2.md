@@ -39,6 +39,8 @@ Another approach is to implement the requirements with a `NoSQL database`. A com
 
 If you have never heared about NoSQL databases, have a look at this description of advantages of NoSQL databases like MongoDB: [link (mongodb.com)](https://www.mongodb.com/advantages-of-mongodb)
 
+If you take this approach, you can set up a free MongoDB in the cloud (AWS, Microsoft Azure, Google Cloud) via the [MongoDB Atlas](https://www.mongodb.com/atlas/database). You can create a free test instance with your google account. 
+
 # Questions for reflection
 1) What are the right abstractions to use? Consider the ETC principle. Can you swap out the database implementation easily?
 

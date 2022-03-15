@@ -9,15 +9,15 @@ To begin with this chapter make sure your status quo looks like this:
 At this point you should have an empty project in your prefered programming language. There is a separate repository for the project and every group member should have access to it. If this is not the case, go back to the [preparation steps](./preparation.md).
 
 ## Receiving json files over network connection
-The RCP systems needs to process `json` files over network. For that you need the following:
+The RCP needs to process `json` files over network. For that you need the following:
 
 - Start your implementation by using a TCP socket to receive data over network
-- Listen on a fixed port for new connetions
+- Open a configurable port and listen for new connetions
 - A client will establish a new connection for every file that needs to be transmitted 
 
 The connection will be closed by the client if the file is transmitted completely. By closing the connection on client side you will know, when the transfer is completed.
 
-Once the file is transmitted, convert the raw byte content to a `json-object`. That object can be validated with the provided schema file `./json/json_file.schema`.  
+Once the file is transmitted, convert the raw bytes received into a `json-object`. That object can be validated with the provided schema file `./json/json_file.schema`.  
 
 If this description was to fast paced for you and you need a gentle introduction into socket programming, feel free to check out [this](../../material/network.md) introduction to network sockets.
 

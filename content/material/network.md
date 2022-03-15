@@ -17,11 +17,13 @@ To be able to receive data we must create a socket. For that we must open a port
 Your programming language most likely will offer you a stream-oriented (TCP) or datagram-oriented (UDP) socket. As statet in the requirements, use a TCP socket for your connection. 
 
 ## What is a port and which port to use?
-A port is a software based number between `1` and `65535`. They are used to distinguish network communication for specific services. To get only the exact data a service needs, it uses its own unique port. 
+A port is a software based number between `1` and `65535`. It is used to distinguish network communication for specific services. To get only the exact data a service needs, it uses its own unique port. 
 
-Ports between `1` and `1024` are the so called `Well known ports`. It is highly discouraged to use a port for your application in this range because it is very likely that you get a port collision when the port is already used. 
+Ports between `1` and `1024` are so called `Well known ports`. It is highly discouraged to use a port for your application in this range. If you ignore the warning and do so anyway it is very likely that you get a port collision when the port is already used. 
 
-Some examples for well known ports are port 80 typically used for HTTP, port 22 is used for SSH, port 23 for FTP and so on. Ports are officially managed by an organisation called IANA (Internet Assigned Numbers Authority). 
+Some examples for well known ports are port 80 which is typically used for HTTP, port 22 is used for SSH, port 23 for FTP and so on. Ports are officially managed by an organisation called IANA (Internet Assigned Numbers Authority). 
+
+Have a look at [this](https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers) wikipedia page to get an overview of applications and the ports they use. 
 
 It is recommended to choose a port between 20.001 and 20.559.  It is unlikely that an application will already use a port within that range. 
 

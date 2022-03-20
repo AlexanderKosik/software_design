@@ -1,4 +1,4 @@
-[Back to Implementation I](./impl_1.md) 
+[Back to Implementation I](../project/impl_1/impl_1.md)
 
 # System overview
 Imagine our Recommerce platform is being used by a startup. A small team is responsible for the acquisition of used books and has to enter them into the system.  The management of the books has to be done in a structured format, in our case this is the JSON schema. 
@@ -33,4 +33,4 @@ A network connection is not necessarily needed, but it is very convenient. We co
 
 Each time new books are purchased, a person would need to access the system on site and import the data into the system from a USB drive. While this is not technically a problem, it is certainly impractical and that's why a network connection is the better approach. 
 
-[Back to Implementation I](./impl_1.md) 
+[Back to Implementation I](../project/impl_1/impl_1.md)

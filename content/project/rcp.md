@@ -1,4 +1,4 @@
-[Back (Preparation)](./preparation.md) | [Next (Implementation I)](./impl_1.md)
+[Back (Preparation)](./preparation.md) | [Next (System overview)](./system_overview.md)
 
 # Project RCP: Recommerce Platform
 
@@ -42,4 +42,4 @@ If you need more information about json, feel free to have a look at these descr
 - [Introduction to JSON](https://javaee.github.io/tutorial/jsonp001.html)
 - [Libraries to parse JSON](https://www.json.org/json-en.html)
 
-[Back (Preparation)](./preparation.md) | [Next (Implementation I)](./impl_1/impl_1.md)
+[Back (Preparation)](./preparation.md) | [Next (System overview)](./system_overview.md)

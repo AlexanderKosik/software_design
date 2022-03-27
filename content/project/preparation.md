@@ -2,9 +2,9 @@
 
 Before we dive into the project you must fulfill some requirements. 
 
-1) Choose a common programming language in your group. You can choose between `Java`, `Python` or `C++`. Other programming languages **are not allowed**.
+1) Choose a common programming language in your group. You can choose between `Java`, `Python` or `C++`. Other programming languages **are not allowed**, if the material is used as part of a lecture.
 
-2) Agree on an integrated development environment (IDE). Suggestions would be [Eclipse](https://www.eclipse.org/ide/) or [IntelliJ](https://www.jetbrains.com/de-de/idea/) for Java, [PyCharm](https://www.jetbrains.com/de-de/pycharm/) or [Visual Studio Code](https://code.visualstudio.com/) for Python or [CLion](https://www.jetbrains.com/de-de/clion/) for C++.
+2) Within your group agree on an integrated development environment (IDE). Suggestions would be [Eclipse](https://www.eclipse.org/ide/) or [IntelliJ](https://www.jetbrains.com/de-de/idea/) for Java, [PyCharm](https://www.jetbrains.com/de-de/pycharm/) or [Visual Studio Code](https://code.visualstudio.com/) for Python or [CLion](https://www.jetbrains.com/de-de/clion/) for C++.
 
 3) Create a [github](https://github.com/) account, every group member needs its own github account. When each participant has created an account, **one team member** has to create an empty git repository. If you don't know how to do this, have a look at ["how tocreate a repo"](https://docs.github.com/en/get-started/quickstart/create-a-repo).
 
@@ -25,6 +25,6 @@ Before we dive into the project you must fulfill some requirements.
     If you need more ressources on git, have a look at this [free git book](https://git-scm.com/book/en/v2).
 
 
-When you have successfully completed all of the above steps, proceed to the project description.
+When you have successfully completed all of the above steps, we can dive into the project description.
 
 [Back (Readme)](../../README.md)| [Next (Project description)](./rcp.md)

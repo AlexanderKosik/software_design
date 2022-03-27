@@ -8,7 +8,9 @@ To begin with this chapter make sure your status quo looks like this:
 ## Status Quo:
 At this point you should have an empty project in your prefered programming language. There is a separate repository for the project and every group member should have access to it. If this is not the case, go back to the [preparation steps](./preparation.md).
 
-## Receiving json files over network connection
+You should also have a basic unterstanding of the requirements and your quality attributes your system has to fulfill. 
+
+# Receiving json files over network connection
 The RCP needs to process `json` files over network. For that you need the following:
 
 - Start your implementation by using a TCP socket to receive data over network
@@ -58,9 +60,9 @@ You can test your network settings and file transmission on your local machine b
 
 ![](images/client_sim.png)
 
-By starting the `rcp_print_server` it will open port `20.001` and wait for connection. The connection and can be established by using `rcp_send`. 
+By starting the `rcp_print_server` it will open port `20.001` and wait for connection. The connection can be established by using `rcp_send`. 
 
-The ip address *127.0.0.1* is the so called loopback address and can be used to send data over network to the own system. 
+The ip address *127.0.0.1* is the so called loopback address and can be used to send data over network your own system. 
 
 ```bash
 $ python3 ./rcp_print_server.py
@@ -74,7 +76,15 @@ Your job is now to get rid of the `rcp_print_server` which is just used for demo
 
 1) Try to run the Recommerce Platform and the `rcp_send` script on different systems. What needs to be changed within the `rcp_send` script?
 
-2) Add your books in the json format within the json directory. Try to transmit them with the `rcp_send`  script. 
+2) Add your own books in the json format within the json directory. Try to transmit them with the `rcp_send`  script. 
+
+# Definition of Done
+You are done when:
+
+- You have a working implemenation of a network server within your RCP
+- The network server can receive and process json files
+- You have an internal representation of the json files
+- You have manually or automatically testet your system and everything works as expected
 
 # Questions for reflection
 1) How does the internal representation of your json data look like?
@@ -83,7 +93,7 @@ Your job is now to get rid of the `rcp_print_server` which is just used for demo
 
 3) What is the difference between TCP and UDP? Why is TCP the appropriate transmission protocol for this use case?
 
-4) Do you have any tests for your system? How can your system be tested? How does the network retrieval of data over network affect your ability to test your system?
+4) Do you have any automatic tests for your system? How can your system be tested? How does the network retrieval of data over network affect your ability to test your system?
 
 # Further readings
 

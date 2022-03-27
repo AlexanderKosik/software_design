@@ -12,7 +12,9 @@ class EchoHandler(BaseRequestHandler):
                 #print(msg)
                 # now validate the message
                 json_payload = json.loads(msg)
-                schema = json.loads(open('json/json_book.schema').read())
+                f = open('json/json_book.schema')
+                schema = json.loads(f.read())
+                f.close()
                 validate(json_payload, schema)
             else:
                 break

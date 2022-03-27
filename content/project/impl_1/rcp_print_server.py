@@ -1,5 +1,7 @@
 from socketserver import BaseRequestHandler, TCPServer
+from jsonschema import validate
 import time
+import json
 
 class EchoHandler(BaseRequestHandler):
     def handle(self):
@@ -7,7 +9,11 @@ class EchoHandler(BaseRequestHandler):
         while True:
             msg = self.request.recv(8192)
             if msg:
-                print(msg)
+                #print(msg)
+                # now validate the message
+                json_payload = json.loads(msg)
+                schema = json.loads(open('json/json_book.schema').read())
+                validate(json_payload, schema)
             else:
                 break
 

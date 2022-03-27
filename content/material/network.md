@@ -7,19 +7,25 @@ From the perspective of our system, the team that enters the books into the syst
 
 ![](images/client_to_rcp.png)
 
-From the requirements follows that the Recommerce Platform should receive the JSON files over network. For that we need a socket. 
+From the requirements follows that the Recommerce Platform should receive the JSON files over network. How many files need to be processed is not specified. This is a great attribute described in a quality scenario ;)
+
+To receives bytes over network we need a socket. 
 
 # Sockets
 A socket is an object responsible for receiving and transmitting data, in most cases over network. 
 
-To be able to receive data we must create a socket. For that we must open a port on our RCP and define the network interface on which we expect the client to send data to. 
+To be able to receive data we must first create a socket. For that we must open a port on our RCP and define the network interface on which we expect the client to send data to. 
 
-Your programming language most likely will offer you a stream-oriented (TCP) or datagram-oriented (UDP) socket. As statet in the requirements, use a TCP socket for your connection. 
+The interface is the network card of your computer. You can use a wired or wireless connection or also listen on all interfaces of your computer. How to do this? I am sure, google will help you with that question ;)
+
+Your programming language will offer you a stream-oriented (TCP) or datagram-oriented (UDP) socket. As statet in the requirements, use a TCP socket for your connection. 
+
+A network socket is uniquely descibed from the combination of an IP address and port. But what port to use exactly? 
 
 ## What is a port and which port to use?
 A port is a software based number between `1` and `65535`. It is used to distinguish network communication for specific services. To get only the exact data a service needs, it uses its own unique port. 
 
-Ports between `1` and `1024` are so called `Well known ports`. It is highly discouraged to use a port for your application in this range. If you ignore the warning and do so anyway it is very likely that you get a port collision when the port is already used. 
+Ports between `1` and `1024` are so called `Well known ports`. It is highly **discouraged** to use a port for your application in this range. If you ignore the warning and do so anyway it is likely that you get a port collision when the port is already used, but no one hinders you from doing that. 
 
 Some examples for well known ports are port 80 which is typically used for HTTP, port 22 is used for SSH, port 23 for FTP and so on. Ports are officially managed by an organisation called IANA (Internet Assigned Numbers Authority). 
 

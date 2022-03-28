@@ -18,6 +18,9 @@ An alternative database approach
 ## open-close principle
 For software systems to be easy to change, the system must be designed to allow new requirements be implemented by adding new code, rather than changing existing code.
 
+## Refactoring
+Refactoring is changing the structure of a component or system without changing its functionality. 
+
 ## Socket
 A socket is an object through which data can be exchanged. A socket is mostly used to exchange data with other computers over a network. The connection is mostyl bidirectional, so data can be send and received over a socket. 
 

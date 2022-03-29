@@ -2,9 +2,11 @@
 
 # Project RCP: Recommerce Platform
 
-In this project we create a recommerce platform (the *RCP*). A recommerce platform is a software platform that manages used media items such as books.
+In this project we create a recommerce platform (short *RCP*). A recommerce platform is a software platform that manages used media items such as books.
 
 We start with very few requirements in the beginning. The numer of requirements will increase over time. This increase in requirements simulates demanding customers, when they get in first contact with the commissioned software project.
+
+An important aspect of software design is the anticipation of possible changing or extended requirements. We need to have this in mind while designing the basic structure of our system.
 
 # Requirements
 

@@ -9,7 +9,7 @@ class EchoHandler(BaseRequestHandler):
         while True:
             msg = self.request.recv(8192)
             if msg:
-                #print(msg)
+                print(msg)
                 # now validate the message
                 json_payload = json.loads(msg)
                 f = open('json/json_book.schema')

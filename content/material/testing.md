@@ -1,3 +1,5 @@
+[Back (Implementation I)](../project/impl_1/impl_1.md) 
+
 # Testing your system
 
 Over time, our system grows as new features are added or existing features need to be modified and extended. The implementation of new features is usually accompanied by an increase in complexity.
@@ -27,8 +29,8 @@ These functions could be implemented like this:
 ```python
 def mean_int(list_of_numbers) -> int:
     """
-    Returns the mean as integer. Function is always rounding down. 
-    Returns 0 on empty input
+    Returns the mean as integer. This function is always rounding down. 
+    Returns 0 on empty input.
     """
     import math
     try:
@@ -38,7 +40,8 @@ def mean_int(list_of_numbers) -> int:
 
 def median_int(list_of_numbers) -> int:
     """
-    Returns the median as integer. Function is lower item of the sorted list
+    Returns the median as integer. 
+    This function returns the value of item above the middle of the sorted list
     if container length is even. 
 
     Throws an IndexError on empty list
@@ -47,7 +50,9 @@ def median_int(list_of_numbers) -> int:
 ```
 
 How can we assure that the functions behave as expected?
-We can write unit test functions for the functions that will make sure, they will behave as described.
+We can write unit tests for the functions that will make sure, they will behave as described and expected.
+
+Let's have a look at how these functions might look like in python without using any testing framework.
 
 ```python
 def test_mean_int():
@@ -59,20 +64,32 @@ def test_mean_int():
 def test_median_int():
     assert median_int([1, 1, 1]) == 1, "median of 3x 1 is equal to 1"
     assert median_int([1, 1, 2]) == 1, "test on uneven list length"
-    assert median_int([1, 1, 2, 2]) == 1, "test on even list length"
-    exceptionThrown = false
+    assert median_int([1, 1, 2, 2]) == 2, "test on even list length"
+    exceptionThrown = False
     try:
         median_int([]), "test with empty list"
     except IndexError:
-        exceptionThrown = true
-    assert exceptionThrows, "test IndexError on empty list"
+        exceptionThrown = True
+    assert exceptionThrown, "test IndexError on empty list"
     print("Good median_int() function")
 ```
+
+This example is the simplest form of creating a unit test without the help of a testing framework. As seen in function `test_median_int()` this may imply additional logic to test a method that throws an exception. 
+
+Here come unittest frameworks into play. They support the developer by providing powerful assert methods and supporting structures like test setup and teardown.
+
 # Supporting frameworks
 
-# how many tests do we need?
+There is a large number of unittest framworks. Some recommondations, depending on your programming language are the following:
 
-We can use a metric called cyclomatic complexity. The number of tests is equal to the CC.
+- Python: *unittest* (builtin) and *pytest*
+- Java: *JUnit*
+- C++: *Catch2*, *doctest* or *Google Test*
 
+# How many tests do we need?
 
-# parametrisierte tests
+In order to determine the number of tests required for complete coverage of a complex function, the "Cycomatic Complexity" (CC) metric can be used, also known as *McCabe Metric*. It measures the number of independant paths on the control flow graph of a function.
+
+For example, if a function has a single if condition, there are two independent paths in the control flow: one for a true condition and one path if the condition is false. The CC metric is 2 in this case and therefore we need two unittests for 100 % code coverage. One test which tests if the condition is `True` and for a `False` condition. 
+
+[Back (Implementation I)](../project/impl_1/impl_1.md) 

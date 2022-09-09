@@ -18,7 +18,7 @@ At this point you should have implemented a TCP network connection to receive bo
 
 If your answer is "yes", it is more likely that your design is good. 
 
-Most design principles, patterns and acronyms are closly related to the ETC value. We will talk about simplicity and readability now, but there is more to come during the course.
+Most design principles, patterns and acronyms are closely related to the ETC value. We continue with talking about simplicity and readability now, but there is more to come about design principles during the course.
 
 ## Simplicity
 A good design is simple and easy to understand. If we can understand it well, we can change it more easily. So this property directly pays into the **ETC** property.
@@ -29,15 +29,33 @@ There is a myth about the NASA paying thousands of dollers to a company which sh
 
 It's a modern myth and proven, that it is not the truth, but it gets the point very well. Both pens provide more or less the same functionality, but one is way simpler so the solution is superior.  
 
+
 ## Readability
- Source code is written once and maybe changed one time on a later point while refactoring, but it is read way more often. So if we can understand the source code quite well, we can change it more easily. That's why readability is also a supporting metric to ETC. 
+ Source code is written once and maybe changed one time on a later point while refactoring, but it is read way more often. So if we can understand the source code quite well, we can change it more easily. That's why readability is also a supporting metric to ETC.
+
+The style of our source code also influences readability. Think about a source code line that is 200 characters wide. It may be nearly impossible to understand adhoc what this line is doing and it is also very hard to read the line without scrolling.
+
+The Python Programming languages defines a coding standard how you Python code should be formatted. It sets a globally respected standard and also help in avoiding flame wars about *how the code should look*. 
+
+Newer programming languages like *golang* go one step further by providing a gofmt tool that will take care of the file formatting. To quote the [go website](https://go.dev/blog/gofmt):
+
+> Gofmt’d code is:
+> 
+> - easier to write: never worry about minor formatting concerns while hacking away,
+> 
+> - easier to read: when all code looks the same you need not mentally convert others' formatting style into something you can understand.
+> 
+> - easier to maintain: mechanical changes to the source don’t cause unrelated changes to the file’s formatting; diffs show only the real changes.
+> 
+> uncontroversial: never have a debate about spacing or brace position ever again!
+
 
 # How do we want to change the system?
 If we need to change our system, e.g. we get a new requirement from our customers that we need to implement, than the question arises: *How* do we want to change the system?
 
 We can implement new features by **changing existing code** or by **adding new code**. The **open-close-principle** (originated by Bertrand Meyer in the 1980s) states, that a system is easier to change, if we can implement a new requirement by adding new code, rather than changing existing code (the system is open for extension, but closed for modification).
 
-Let's have a look at this example:
+Let's have a closer look at this example:
 
 ![](images/NetworkServer.png)
 
@@ -62,5 +80,9 @@ So if we design our system too abstract we actually make it worse instead of bet
 You may already know a similar trade of: the tradeoff between computational complexity and disc space. We can save computational ressources if we store precalculated values on disc. But this leads to more occupied disk space. 
 
 So we must decide from case to case if the abstraction is really needed or makes if it does make our system to complex in worst case.
+
+# Further information
+
+The Python programming language has a style guide (*The Zen of Python*), which encourages you to write simple and readable code. You can read this guide in an interactive python shell. Can you figure out how to do this?
 
 [Back (Implementation I)](../project/impl_1/impl_1.md) 

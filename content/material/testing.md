@@ -15,7 +15,7 @@ At this point it is necessary to rethink the strategy of manual testing and to s
 Manuell tests are usually performed using the system as a whole. In comparison, automatic tests can take place on different levels of our system. Like manual tests they can test the system as a whole (so-called *system tests*), verify the interaction of individual components (so-called *integration tests*) or verify individual units of the system in isolation. In the latter case, we speak of unittests.
 
 # Unit tests
-Unittests test units of our system in isolation. But what is *a unit*? A unit is the smallest testable thing. It may be as small as a function, or an object or an modul. The only important thing is that we can test this unit in isolation.
+Unittests test units of our system in isolation, as the name suggests. But what is *a unit*? A unit is the smallest testable thing. It may be as small as a function, or an object or an modul. The only important thing is that we can test this unit in isolation.
 
 Isolation means, that we have no dependencies to other components that make it hard or even impossible for us to test this unit in isolation. Such dependencies might be connections to specific hardware, dependencies to network input, dependencies to a database and so on. 
 
@@ -76,7 +76,7 @@ def test_median_int():
 
 This example is the simplest form of creating a unit test without the help of a testing framework. As seen in function `test_median_int()` this may imply additional logic to test a method that throws an exception. 
 
-Here come unittest frameworks into play. They support the developer by providing powerful assert methods and supporting structures like test setup and teardown.
+Here come unittest frameworks into play. They support the developer by providing powerful assert methods and supporting structures like test setup and teardown and also help us with testing functions which throw exceptions.
 
 # Supporting frameworks
 
@@ -92,4 +92,7 @@ In order to determine the number of tests required for complete coverage of a co
 
 For example, if a function has a single if condition, there are two independent paths in the control flow: one for a true condition and one path if the condition is false. The CC metric is 2 in this case and therefore we need two unittests for 100 % code coverage. One test which tests if the condition is `True` and for a `False` condition. 
 
-[Back (Implementation I)](../project/impl_1/impl_1.md) 
+You can find more information about cyclomatic complexity on this [wiki page](https://en.wikipedia.org/wiki/Cyclomatic_complexity).
+
+[Back (Implementation I)](../project/impl_1/impl_1.md)
+

@@ -6,20 +6,20 @@ We now know our three main requirements that we need to implement:
 
 - Processing book information as JSON files over network
 - Persistance of information
-- Providing an interface to request information about available books
+- Providing an interface to request information about available books (also over network)
 
 We can assume, that the requirements will not be final and will be extended or changed during the lifetime of our system.
 
 ## System context
 Let's give an overview over our system and the communication partners/clients of our system. For that overview we use a system context diagram.
 
-A system context diagram shows the boundaries of our system and shows other systems which interact with the RCP (the system unter design). 
+A system context diagram shows the boundaries of our system and shows other systems which interact with the RCP (referred to as the "System Under Design"). 
 
 ![](../material/images/system_overview.png)
 
 The overview shows an actor using a program called `json file transmitter`. This tool is used to send book information to our platform.
 
-Other systems communicating with the RCP request item information and process them. This could be, for example, a shopping app that queries information about available used books and displays them in the app.
+Other systems communicating with the RCP request item information and process them. This could be, for example, a shopping app that queries information about available used books and displays them in the app, or a website.
 
 To have a rough structure of our RCP it is separated in three parts. Each part is responsible for a specific requirement. The components may consist of other parts, but this is not specific at the moment. 
 
@@ -39,7 +39,7 @@ The implemenation of quality attributes siginificantly influences the design of 
 
 1) What are important qualities attributes we need to consider in our system design and implementation?
 
-2) Try to discribe quality scenarios for your identified quality attributes. Examples for 
+2) Try to describe quality scenarios for your identified quality attributes. Examples for 
 quality scenarios are the following: 
 
     1) *"Time behaviour: The platform must be able to import at least 15 books per second over the network interface"*
@@ -49,3 +49,4 @@ quality scenarios are the following:
     3) ...
 
 [Back (Preparation)](./preparation.md) | [Next (Implementation I)](./impl_1/impl_1.md)
+

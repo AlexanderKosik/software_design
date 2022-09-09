@@ -39,7 +39,7 @@ You will find further json example files in the directory `./impl_1/json`.
 The book meta data needs to be persistently stored by the RCP.
 
 ## 3) Data requests
-Clients must be able to query the book inventory over the RCP. In the first RCP version the client needs to be able to query a book by author and book title over network. 
+Clients (like a website) must be able to query the book inventory over the RCP. In the first RCP version the client needs to be able to query a book by author and book title over network. 
 
 # Further readings
 

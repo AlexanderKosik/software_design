@@ -45,7 +45,8 @@ Clients (like a website) must be able to query the book inventory over the RCP. 
 
 If you need more information about json, feel free to have a look at these descriptions:
 
-- [Introduction to JSON](https://javaee.github.io/tutorial/jsonp001.html)
+- [What is JSON?](../material/json.md)
+- [Extended Introduction to JSON](https://javaee.github.io/tutorial/jsonp001.html)
 - [Libraries to parse JSON](https://www.json.org/json-en.html)
 
 [Back (Preparation)](./preparation.md) | [Next (System overview)](./system_overview.md)

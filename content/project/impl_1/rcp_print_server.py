@@ -20,6 +20,6 @@ class EchoHandler(BaseRequestHandler):
                 break
 
 if __name__ == '__main__':
-    print("Waiting for connection ...")
+    print("Waiting for connection...")
     serv = TCPServer(('', 20_001), EchoHandler)
     serv.serve_forever()

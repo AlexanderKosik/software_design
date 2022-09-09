@@ -26,11 +26,19 @@ If this description was to fast paced for you and you need a gentle introduction
 ## Simulating a client
 To simulate a client you can use the program `rcp_send.py` in the directory `content/project/impl_1`. With this application you can send json files to your RCP.
 
-To run the application you need a python installation. If you have no python interpreter installed, you can download an interpreter [here (python.org)](www.python.org).
+To run the application you need a python installation. If you have no python interpreter installed, you can download an interpreter [here](https://python.org).
 
-The script transfers json files from the folder `json`. You can browse the folder and inspect the json files manually and also save new json files to that folder to transmit them over network. For that make sure, that the file ending is `.json` (other file endings are filtered by the application). 
+The python script can transfer json files from the folder `json` over network. You can browse the folder and inspect the json files manually and also save new json files to that folder to transmit them over network. For that make sure, that the file ending is `.json` (other file endings are filtered by the application). 
 
-The script can be used as followed:
+You can test your network settings and file transmission on your local machine by using `rcp_print_server.py`.
+By starting the `rcp_print_server` it will open port `20.001` and wait for connection.
+
+```bash
+$ python3 ./rcp_print_server.py 
+Waiting for connection...
+```
+
+Now start the script `rcp_send` on another terminal and use it as followed:
 
 ```bash
 $ python3 ./rcp_send.py 
@@ -56,11 +64,7 @@ File number: 1
 --- Select file for transmission | Ctrl+C to terminate ---
 ```
 
-You can test your network settings and file transmission on your local machine by using `rcp_print_server.py`.
-
 ![](images/client_sim.png)
-
-By starting the `rcp_print_server` it will open port `20.001` and wait for connection. The connection can be established by using `rcp_send`. 
 
 The ip address *127.0.0.1* is the so called loopback address and can be used to send data over network your own system. 
 
@@ -76,7 +80,7 @@ Your job is now to get rid of the `rcp_print_server` which is just used for demo
 
 1) Try to run the Recommerce Platform and the `rcp_send` script on different systems. What needs to be changed within the `rcp_send` script?
 
-2) Add your own books in the json format within the json directory. Try to transmit them with the `rcp_send`  script. 
+2) Add your own books in the json format within the json directory. Try to transmit them with the `rcp_send` script. 
 
 # Definition of Done
 You are done when:
@@ -100,6 +104,5 @@ You are done when:
 - [Testing your system](../../material/testing.md)
 - [Abstraction](../../material/abstraction.md)
 - [Why a Version Control System is important](../../material/vcs.md)
-- [What is JSON?](../../material/json.md)
 
 [Back (preparation)](./preparation.md) | [Next (Implementation II)](../impl_2/impl_2.md)

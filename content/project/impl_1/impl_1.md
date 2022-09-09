@@ -8,7 +8,7 @@ To begin with this chapter make sure your status quo looks like this:
 ## Status Quo:
 At this point you should have an empty project in your prefered programming language. There is a separate repository for the project and every group member should have access to it. If this is not the case, go back to the [preparation steps](./preparation.md).
 
-You should also have a basic unterstanding of the requirements and your quality attributes your system has to fulfill. 
+You should also have a basic unterstanding of the requirements and the quality attributes your system has to fulfill.
 
 # Receiving json files over network connection
 The RCP needs to process `json` files over network. For that you need the following:

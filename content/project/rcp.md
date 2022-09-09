@@ -2,15 +2,19 @@
 
 # Project RCP: Recommerce Platform
 
-In this project we create a recommerce platform (short *RCP*). A recommerce platform is a software platform that manages used media items such as books.
+In this project we create a recommerce platform (short *RCP*). A recommerce platform is a software platform that manages used media items such as books. Examples for recommerce platforms in German-speaking countries are *momox* or *rebuy*.
 
 We start with very few requirements in the beginning. The numer of requirements will increase over time. This increase in requirements simulates demanding customers, when they get in first contact with the commissioned software project.
 
-An important aspect of software design is the anticipation of possible changing or extended requirements. We need to have this in mind while designing the basic structure of our system.
+> **Keep in mind**
+>
+> An important aspect of software design is the anticipation of possible changing or extended requirements. We need to have this in mind while designing the basic structure of our system.
 
 # Requirements
 
-Our first set of requirements for our project are these:
+We now know, that we create a Recommerce Platform. The RCP needs to handle information about books. On the one side, we need to be able to store information about the books we are going to sell.
+
+On the other side this informaton must be requestable, for example from a user facing front end like a website. In addition to that it must be specified, which information describes a book. From this description our first three requirements emerge.
 
 ## 1) Book Meta Data
 Our system must accept meta data about books. This meta data will be transmitted over network. The format of the meta data is `json`. 

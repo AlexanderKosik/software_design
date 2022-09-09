@@ -2,7 +2,7 @@
 
 # What is a Version Control System
 
-A Version Control System (VCS) is a software system which tracks files and tracks changes to these files. With a CVS it is possible to:
+A Version Control System (VCS) is a software system which tracks files and tracks changes to these files. With a VCS it is possible to:
 
 - Log changes: We can see exactly what files have changed at which point in time
 - Recovery: We can get back to previous file version. With that we can easily undo mistakes or try out new things
@@ -21,6 +21,7 @@ Imagine the pain we have if we send new versions to each other by email. Even if
 
 So the recommondation is simply: **Always use a VCS**, even if you work alone at a project. At some point in time you will mess things up and with a VCS you can easily inspect your changes and recover a working state.
 
-This course is also stored in a VCS, even if it has more text than source code. But simply the assurance, that I can get back to previous states is a huge game changer. And also I like the idea that I can easily switch my computer, checkout the last state of this course, continue working and commit it back to the VCS. Everybody intersted can pull the lastest changes and see what has changed. 
+This course is also stored in a VCS, even if it has more text than source code. But simply the assurance, that I can get back to previous states is a huge game changer. And also I like the idea that I can easily switch my computer, checkout the last state of this course, continue working and commit it back to the VCS. Everybody interested can pull the lastest changes and see what has changed. 
 
 [Back (Implementation I)](../project/impl_1/impl_1.md)
+

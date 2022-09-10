@@ -25,3 +25,4 @@ Refactoring is changing the structure of a component or system without changing 
 A socket is an object through which data can be exchanged. A socket is mostly used to exchange data with other computers over a network. The connection is mostyl bidirectional, so data can be send and received over a socket. 
 
 ## unit-test
+An automatic software test which tests a small unit like a function, class or module. 

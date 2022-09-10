@@ -14,7 +14,7 @@ A system has a good design if it is easy to change. If it is difficult to change
 
 Keep the ETC value in your head during the proceeding of this course. Ask yourself during the development: "Will this kind of implementation make my system easier or harder to change in future?".
 
-At this point you should have implemented a TCP network connection to receive books in the json format over network. Ask yourself: "Is it easy for a me to change to another network framework? Is it easy for me to change the transmission protocol to UDP?".
+At this point you should have implemented a TCP network connection to receive books in the JSON format over network. Ask yourself: "Is it easy for a me to change to another network framework? Is it easy for me to change the transmission protocol to UDP?".
 
 If your answer is "yes", it is more likely that your design is good. 
 

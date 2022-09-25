@@ -26,7 +26,9 @@ There are multiple ways of implementing the database connection in your project.
 
 ## The manual way
 
-TBD
+The manual way uses raw SQL queries. These queries must be packed into a suitable object structure. For example, one object for each query or one object for each table. The dataset is manipulated via an `insert`, `update` and `delete` query. 
+
+The manual approach means less overhead, no dependencies to existing libraries have to be added. However, depending on the situation, the approach can be more extensive and is more likely to introduce errors in the implementation.
 
 ## Object Relational Mapping (ORM)
 Object Relational Mapping presents a method of associating classes with database tables. Database tables are implicitly described by the objects that need to be stored. Every row in a table is associated to an object, where as every attribute of the object is a column in the table. 

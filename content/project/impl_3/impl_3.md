@@ -32,18 +32,7 @@ REST ist mostly used in machine-to-machine communication.
 2) Request all books with a given title
 3) Request all books from an author
 
-
-Lets focus on GET and POST request.
-
-URI	HTTP verb	Description
-api/users	GET	Get all users
-api/users/new	GET	Show form for adding new user
-api/users	POST	Add a user
-api/users/1	PUT	Update a user with id = 1
-api/users/1/edit	GET	Show edit form for user with id = 1
-api/users/1	DELETE	Delete a user with id = 1
-api/users/1	GET	Get a user with id = 1
-
+Is there more that makes sense?
 
 ## Possible frameworks to use
 If you are using Python as a programming language, you can use FastAPI or Flask as an REST framework. You will find an overview over Python REST API Frameworks [here](https://rapidapi.com/blog/best-python-api-frameworks/). 
@@ -57,4 +46,10 @@ If you are using Java as a programming language, you can use Spring Boot for you
 
 3) Did this requirement change your overall system architecture? Where is the source code for your API requests located? In a existing class, in a new class, in a new module, in a new application?
 
-4) How scalable is your current design and implementation? Can you handle way more requests than you initially specified?
+4) How scalable is your current design and implementation? Can you handle way more requests than you initially specified? What design can improve the scalability?
+
+5) What other technologies instead of REST could be used for our API?
+
+
+
+

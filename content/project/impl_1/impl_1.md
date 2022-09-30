@@ -1,4 +1,4 @@
-[Back (preparation)](./preparation.md) | [Next (Implementation II)](./impl_2.md)
+[Back (preparation)](../preparation.md) | [Next (Implementation II)](../impl_2/impl_2.md)
 
 # Implementation part I
 In this chapter you will implement the network receival and convert transmitted bytes to a JSON file. You will reflect on possibilites how to structure internal representation of data and learn about general principles in software design. 
@@ -105,4 +105,4 @@ You are done when:
 - [Abstraction](../../material/abstraction.md)
 - [Why a Version Control System is important](../../material/vcs.md)
 
-[Back (preparation)](./preparation.md) | [Next (Implementation II)](../impl_2/impl_2.md)
+[Back (preparation)](../preparation.md) | [Next (Implementation II)](../impl_2/impl_2.md)
